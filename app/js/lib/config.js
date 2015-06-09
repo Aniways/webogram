@@ -19,10 +19,10 @@ Config = window.Config || {};
 */
 
 Config.App = {
-  id: 2496,
-  hash: '8da85b0d5bfe62527e5b244c209159c3',
+  id: 31238,
+  hash: '16b9ecc513af489d6405160518f67755',
   version: '0.4.6',
-  domains: ['web.telegram.org', 'zhukov.github.io']
+  domains: ['web.aniwaysmessenger.com']
 };
 
 Config.Modes = {
