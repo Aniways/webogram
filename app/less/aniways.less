@@ -1,0 +1,37 @@
+.aniways-image {
+  height: 20px;
+  width: auto;
+  cursor: pointer;
+}
+
+.aniways-wall-image {
+  height: 30px;
+  width: auto;
+}
+
+.aniways-popover-image {
+  height: 50px;
+  width: auto;
+  cursor: pointer;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.aniways-popover {
+  border-radius: 20px;
+  background-color: rgba(0,0,0,0.4);
+  max-width: none;
+}
+
+@media screen and (max-device-width: 450px) {
+  .aniways-popover {
+    max-width:320px;
+    max-height: 70px;
+    overflow-x:scroll;
+    overflow-y: hidden;
+  }
+  .aniways-popover .popover-content {
+    max-height: 70px;
+    width: 0px;
+  }
+}
