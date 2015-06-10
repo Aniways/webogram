@@ -235,7 +235,7 @@ angular.module('myApp.controllers', ['myApp.i18n'])
         })['finally'](function () {
           if ($rootScope.idle.isIDLE || tsNow() - authKeyStarted > 60000) {
             NotificationsManager.notify({
-              title: 'Telegram',
+              title: 'Aniways Messenger',
               message: 'Your authorization key was successfully generated! Open the app to log in.',
               tag: 'auth_key'
             });
