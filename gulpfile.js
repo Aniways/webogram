@@ -77,7 +77,9 @@ gulp.task('copy', function() {
     gulp.src(['app/nacl/mtproto_crypto.pexe', 'app/nacl/mtproto_crypto.nmf'])
       .pipe(gulp.dest('dist/nacl/')),
     gulp.src('app/js/background.js')
-      .pipe(gulp.dest('dist/js'))
+      .pipe(gulp.dest('dist/js')),
+    gulp.src('app/CNAME')
+      .pipe(gulp.dest('dist/'))
   );
 });
 
