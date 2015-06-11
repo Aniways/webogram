@@ -168,8 +168,8 @@ gulp.task('add-appcache-manifest', function() {
       .pipe($.manifest({
           timestamp: true,
           network: ['http://*', 'https://*', '*'],
-          filename: 'webogram.appcache',
-          exclude: ['webogram.appcache', 'app.manifest']
+          filename: 'aniwaysmessenger.appcache',
+          exclude: ['aniwaysmessenger.appcache', 'app.manifest']
         })
       )
       .pipe(gulp.dest('./dist')),
@@ -179,7 +179,7 @@ gulp.task('add-appcache-manifest', function() {
           timestamp: true,
           network: ['http://*', 'https://*', '*'],
           filename: 'app.manifest',
-          exclude: ['webogram.appcache', 'app.manifest']
+          exclude: ['aniwaysmessenger.appcache', 'app.manifest']
         })
       )
       .pipe(gulp.dest('./dist'))
