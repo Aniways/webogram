@@ -1,11 +1,12 @@
 CACHE MANIFEST
-# Time: Thu Jun 11 2015 13:39:50 GMT+0300 (IDT)
+# Time: Thu Jun 11 2015 13:57:55 GMT+0300 (IDT)
 
 
 CACHE:
 CNAME
 favicon.ico
 favicon_unread.ico
+webogram.appcache
 css/app.css
 css/desktop.css
 css/mobile.css
