@@ -20,7 +20,7 @@ angular.module('myApp.controllers', ['myApp.i18n'])
       if (location.protocol == 'http:' &&
           !Config.Modes.http &&
           Config.App.domains.indexOf(location.hostname) != -1) {
-        //location.href = location.href.replace(/^http:/, 'https:');
+        location.href = location.href.replace(/^http:/, 'https:');
         return;
       }
       $location.url('/login');
@@ -43,7 +43,7 @@ angular.module('myApp.controllers', ['myApp.i18n'])
       if (location.protocol == 'http:' &&
           !Config.Modes.http &&
           Config.App.domains.indexOf(location.hostname) != -1) {
-        //location.href = location.href.replace(/^http:/, 'https:');
+        location.href = location.href.replace(/^http:/, 'https:');
         return;
       }
       TelegramMeWebService.setAuthorized(false);
@@ -588,7 +588,7 @@ angular.module('myApp.controllers', ['myApp.i18n'])
     }
 
     ChangelogNotifyService.checkUpdate();
-    //HttpsMigrateService.start();
+    HttpsMigrateService.start();
     LayoutSwitchService.start();
     LocationParamsService.start();
     AppStickersManager.start();
