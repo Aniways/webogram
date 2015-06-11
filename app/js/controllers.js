@@ -592,7 +592,7 @@ angular.module('myApp.controllers', ['myApp.i18n'])
     LayoutSwitchService.start();
     LocationParamsService.start();
     AppStickersManager.start();
-    Aniways.init('TelegramAniways');
+    if(Aniways){Aniways.init('TelegramAniways');} else {console.log('Aniways undefined');}
   })
 
   .controller('AppImDialogsController', function ($scope, $location, $q, $timeout, $routeParams, MtpApiManager, AppUsersManager, AppChatsManager, AppMessagesManager, AppPeersManager, PhonebookContactsService, ErrorService, AppRuntimeManager) {
